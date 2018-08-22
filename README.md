@@ -1,4 +1,5 @@
-## Project: Spider on Mafengwo
+# Project: Spider on Mafengwo
+**This project is based on another project on github, I just rewrite the scripts.**
 * Python scripts:
   * [getCityList.py](https://raw.githubusercontent.com/YijieJIN/mafengwo_crawler/master/getCityList.py)
   * [getCityInfo.py](https://raw.githubusercontent.com/YijieJIN/mafengwo_crawler/master/getCityInfo.py)
@@ -53,30 +54,3 @@
     ```python
 	import time
 	```
-* Functions:
-  * getCityList.py </br>
-    	`def requestUrl(url):` return `bsObj` </br>
-	`def openUrl(url):` use webdriverto open a url </br>
-	`def get_region_urls(url):` return `region_names`, `region_urls` </br>
-	`def get_cities_url(region_urls):` get urls and visitor numbers of cities into a csv file. </br>
-	`def append_cities_url(filename):` append municipalities to total.csv </br>
-	`def get_city_name(bsObj):` get name of a single city </br>
-	`def get_city_url(bsObj):` get url of a single city </br>
-	`def get_city_visitor_num(bsObj):` get visitor number of a single city </br>
-	`def appendIntoFile(info, filename):` write rows into csv file </br>
-	</br>
-  * getCityInfo.py </br>
-    	`def get_city_code(filename):` each city has a special code, this function is used to get codes of cities. </br>
-	`def get_city_food(filename):` get top10 foods with number of travel notes mentioned them for cities. </br>
-	`def get_city_spot(filename):` get top10 spots with number of travel notes mentioned them for cities. </br>
-	</br>
-  * visualize.py </br>
-    	`def read(filename):` read a csv file into an array </br>
-	`def checkExistence(row):` check whether the geological coordinates of a city exists in the library. </br>
-	`def trim(filename):` trim the cities whose coordinates are not in the library. </br>
-	`def trim2(list):` trim the numbers whose numerical values are below 10000. </br>
-	`def toHeatmap(filename):` draw a heatmap </br>
-	`def sort(filename):` sort the array by its second column. </br>
-	`def toBar_cityVisitors(filename):` draw a bar chart about top10 visited  cities. </br>
-	`def toBar(filename, title, legend, html_name):` draw a bar chart (about top10 foods and top10 spots) </br>
-	`def toWordCloud(filename, html_name):` draw a wordcloud (about top50 foods and top50 spots)
