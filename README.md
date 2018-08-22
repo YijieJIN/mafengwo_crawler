@@ -55,23 +55,23 @@
 	```
 * Functions:
   * getCityList.py
-    `def requestUrl(url):` return `bsObj`
-	`def openUrl(url):` use webdriverto open a url
-	`def get_region_urls(url):` return `region_names`, `region_urls`
-	`def get_cities_url(region_urls):` get urls and visitor numbers of cities into a csv file.
-	`def append_cities_url(filename):` append municipalities to total.csv
-	`def get_city_name(bsObj):` get name of a single city
-	`def get_city_url(bsObj):` get url of a single city
-	`def get_city_visitor_num(bsObj):` get visitor number of a single city
-	`def appendIntoFile(info, filename):` write rows into csv file
+    	`def requestUrl(url):` return `bsObj`
+	`def openUrl(url):` use webdriverto open a url </br>
+	`def get_region_urls(url):` return `region_names`, `region_urls` </br>
+	`def get_cities_url(region_urls):` get urls and visitor numbers of cities into a csv file. </br>
+	`def append_cities_url(filename):` append municipalities to total.csv </br>
+	`def get_city_name(bsObj):` get name of a single city </br>
+	`def get_city_url(bsObj):` get url of a single city </br>
+	`def get_city_visitor_num(bsObj):` get visitor number of a single city </br>
+	`def appendIntoFile(info, filename):` write rows into csv file </br>
 	</br>
   * getCityInfo.py
-    `def get_city_code(filename):` each city has a special code, this function is used to get codes of cities.
-	`def get_city_food(filename):` get top10 foods with number of travel notes mentioned them for cities.
-	`def get_city_spot(filename):` get top10 spots with number of travel notes mentioned them for cities.
+    	`def get_city_code(filename):` each city has a special code, this function is used to get codes of cities. </br>
+	`def get_city_food(filename):` get top10 foods with number of travel notes mentioned them for cities. </br>
+	`def get_city_spot(filename):` get top10 spots with number of travel notes mentioned them for cities. </br>
 	</br>
   * visualize.py
-    `def read(filename):` read a csv file into an array
+    	`def read(filename):` read a csv file into an array
 	`def checkExistence(row):` check whether the geological coordinates of a city exists in the library.
 	`def trim(filename):` trim the cities whose coordinates are not in the library.
 	`def trim2(list):` trim the numbers whose numerical values are below 10000.
