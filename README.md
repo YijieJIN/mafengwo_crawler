@@ -32,6 +32,7 @@
 	</br>
   * Wordcloud for popular spots
     ![city_spot_wordcloud.png](https://github.com/YijieJIN/mafengwo_crawler/blob/master/figures/city_spot_wordcloud.png?raw=true)
+    
 ----------------------------------------------
 * Packages:
   * Parse HTML:
